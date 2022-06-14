@@ -1,1 +1,1 @@
-type MyReturnType<T> = any
+type MyReturnType<T> = T extends (...args: any) => infer P ? P : never
